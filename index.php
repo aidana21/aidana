@@ -1,25 +1,45 @@
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <a href="aidana.php">link Aidana</a>
-  
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="main.css">
+    <title>Don</title>
+</head>
+<body>
+    <div class="loginPage">
+    <form>
+        <input type="text" id="fname" name="fname" placeholder="Name"><br>
+        <hr>
+        <input type="password" name="password" id="password" placeholder="Password"/>
+        <hr>
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+    </form>
+    
+    </div>
+        <div class="Login_button">
+          <input type="button" id="clickMe" class="loginClass"  onclick="checkValid()" value="Submit"/>
+        </div>
+     
+      <script>
+          function checkValid() {
+             let name = document.getElementById('fname');
+             var password = document.getElementById('password');
+             if(name.value == 'Don' && password.value == '12345')
+             {
+                pageRedirect();
+             }else{
+                 alert('Invalid');
+             }
+            }
+            function pageRedirect() {
+                window.location.href = "https://practice-for.herokuapp.com/";
+            }   
+         
+         
+      </script>
+    
+</body>
+</html>
