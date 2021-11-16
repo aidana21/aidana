@@ -27,7 +27,7 @@
           function checkValid() {
              let name = document.getElementById('fname');
              var password = document.getElementById('password');
-             if(name.value == 'Don' && password.value == '12345')
+             if(name.value == 'Aidana' && password.value == '12345')
              {
                 pageRedirect();
              }else{
@@ -35,7 +35,7 @@
              }
             }
             function pageRedirect() {
-                window.location.href = "https://practice-for.herokuapp.com/";
+                window.location.href = "https://porffolio.herokuapp.com/";
             }   
          
          
