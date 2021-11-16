@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="main.css">
-    <title>Don</title>
+    <title>Aidana</title>
 </head>
 <body>
     <div class="loginPage">
